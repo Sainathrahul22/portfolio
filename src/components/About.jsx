@@ -41,7 +41,7 @@ export default function About() {
           <p className="text-lg text-gray-200 leading-relaxed mt-6">
             I’m currently seeking opportunities in Data Science, Machine
             Learning, or Software Development, where I can collaborate,
-            contribute, and continue to grow in a dynamic environment.
+            contribute, and continue to grow in a dynamic environment. 
           </p>
 
         </div>
