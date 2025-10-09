@@ -16,26 +16,34 @@ export default function About() {
         <h2 className="text-4xl font-bold mb-10 text-blue-400">👨‍💻 About Me</h2>
 
         <div className="space-y-8 text-lg text-gray-200">
-          <p>
-            I’m <strong>Sainath Rahul A</strong> — an AI/ML Developer and
-            data-centric thinker passionate about building intelligent systems
-            that bridge innovation and impact. I enjoy translating real-world
-            problems into efficient, data-driven solutions through clean code
-            and thoughtful design.
+          <p className="text-lg text-gray-200 leading-relaxed space-y-6">
+            I’m passionate about building intelligent systems and impactful web
+            applications that solve real-world problems. With a strong foundation
+            in Data Science, Machine Learning, and Python-based Full Stack Web
+            Development, I constantly strive to grow as a developer and problem
+            solver.
           </p>
 
-          <p>
-            Currently pursuing my <strong>B.Tech in Computer Science and Engineering</strong> at
-            SRM University, I’ve worked on projects that blend
-            <em> computer vision, predictive analytics, and full-stack
-            development</em>. I also enjoy hackathons and research-driven
-            development, which constantly challenge me to learn and grow.
+          <p className="text-lg text-gray-200 leading-relaxed mt-6">
+            I have hands-on experience in Python programming, having developed
+            projects involving data analysis, prediction models, and automation.
+            I also build robust and scalable web applications using frameworks
+            like Django and Flask, combining backend logic with clean and
+            responsive user interfaces.
           </p>
 
-          <p>
-            My goal is to specialize in <strong>Data Science and AI</strong>,
-            leveraging technology to create meaningful, scalable innovations.
+          <p className="text-lg text-gray-200 leading-relaxed mt-6">
+            My focus areas include Machine Learning, RESTful APIs, and cloud
+            integration. I aim to turn data into actionable insights and create
+            technology that adds tangible value.
           </p>
+
+          <p className="text-lg text-gray-200 leading-relaxed mt-6">
+            I’m currently seeking opportunities in Data Science, Machine
+            Learning, or Software Development, where I can collaborate,
+            contribute, and continue to grow in a dynamic environment.
+          </p>
+
         </div>
       </motion.div>
     </section>
