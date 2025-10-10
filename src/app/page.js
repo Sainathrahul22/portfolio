@@ -5,6 +5,7 @@ import TechStack from "@/components/TechStack";
 import Projects from "@/components/Projects";
 import Achievements from "@/components/Achievements";
 import Contact from "@/components/Contact";
+import footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
       <section id="contact">
         <Contact />
       </section>
+      <Footer />
     </main>
   );
 }
