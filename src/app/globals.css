@@ -5,3 +5,6 @@
 body {
   @apply bg-gray-950 text-white font-sans;
 }
+html {
+  scroll-behavior: smooth;
+}

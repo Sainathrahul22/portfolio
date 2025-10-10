@@ -24,14 +24,15 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const links = [
-    { name: "Home", id: "home" },
-    { name: "About", id: "about" },
-    { name: "Tech Stack", id: "techstack" }, // ✅ Added new section here
-    { name: "Projects", id: "projects" },
-    { name: "Achievements", id: "achievements" },
-    { name: "Contact", id: "contact" },
-  ];
+  const navLinks = [
+  { href: "#hero", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#techstack", label: "Tech Stack" },
+  { href: "#projects", label: "Projects" },
+  { href: "#achievements", label: "Achievements" },
+  { href: "#contact", label: "Contact" },
+];
+
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
