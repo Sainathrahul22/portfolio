@@ -24,12 +24,12 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // 🔹links with the merged section name
   const links = [
     { name: "Home", id: "home" },
     { name: "About", id: "about" },
+    { name: "Tech Stack", id: "techstack" }, // ✅ Added new section here
     { name: "Projects", id: "projects" },
-    { name: "Achievements & Hackathons", id: "achievements" },
+    { name: "Achievements", id: "achievements" },
     { name: "Contact", id: "contact" },
   ];
 
