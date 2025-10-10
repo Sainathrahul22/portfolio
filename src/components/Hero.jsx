@@ -52,7 +52,7 @@ export default function Hero() {
       >
         <div className="w-48 h-48 md:w-72 md:h-72 relative rounded-full overflow-hidden border-4 border-blue-400 shadow-lg">
           <Image
-            src="/profile.png" // make sure this file exists in /public
+            src="/profile.jpg" // make sure this file exists in /public
             alt="Sainath Rahul"
             fill
             className="object-cover"
