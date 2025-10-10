@@ -3,15 +3,16 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState("hero");
   const [scrolled, setScrolled] = useState(false);
 
+  // Handle scroll detection and highlight active section
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
-      let current = "home";
+      let current = "hero";
       sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 100;
+        const sectionTop = section.offsetTop - 120; // offset for navbar height
         if (window.scrollY >= sectionTop) {
           current = section.getAttribute("id");
         }
@@ -24,14 +25,15 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-const links = [
-  { href: "#hero", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#tech", label: "Tech Stack" },
-  { href: "#projects", label: "Projects" },
-  { href: "#achievements", label: "Achievements & Certifications" },
-  { href: "#contact", label: "Contact" },
-];
+  // ✅ The correct section flow and label names
+  const links = [
+    { href: "hero", label: "Home" },
+    { href: "about", label: "About" },
+    { href: "tech", label: "Tech Stack" },
+    { href: "projects", label: "Projects" },
+    { href: "achievements", label: "Achievements & Certifications" },
+    { href: "contact", label: "Contact" },
+  ];
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -53,7 +55,7 @@ const links = [
         <motion.h1
           className="text-xl font-bold text-blue-400 cursor-pointer"
           whileHover={{ scale: 1.05 }}
-          onClick={() => scrollToSection("home")}
+          onClick={() => scrollToSection("hero")}
         >
           Sainath <span className="text-white">Rahul A</span>
         </motion.h1>
@@ -61,13 +63,13 @@ const links = [
         <ul className="flex space-x-6 text-gray-300 font-medium">
           {links.map((link) => (
             <li
-              key={link.id}
-              onClick={() => scrollToSection(link.id)}
+              key={link.href}
+              onClick={() => scrollToSection(link.href)}
               className={`cursor-pointer hover:text-blue-400 transition ${
-                active === link.id ? "text-blue-400" : ""
+                active === link.href ? "text-blue-400" : ""
               }`}
             >
-              {link.name}
+              {link.label}
             </li>
           ))}
         </ul>
