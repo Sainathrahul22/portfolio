@@ -25,7 +25,7 @@ const projects = [
     title: "💬 Real-Time Chat Application",
     description:
       "Developed the frontend of a real-time chat app using React, with support for instant messaging and online user tracking via Socket.io. Implemented a responsive UI using TailwindCSS and DaisyUI, and integrated JWT-based authentication with state management using Zustand. Focused on delivering a smooth user experience with clean UI and robust error handling.",
-    link: "https://github.com/Sainathrahul22/Chat_App", 
+    link: "https://github.com/Sainathrahul22/_Chat_App", 
   },
   {
     title: "📄 Contract Analysis — AI-Powered Legal Insights",
