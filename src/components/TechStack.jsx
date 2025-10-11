@@ -9,15 +9,26 @@ export default function TechStack() {
     },
     {
       title: "📊 Data Science & AI/ML",
-      items: [
-        "NumPy",
-        "Pandas",
-        "Matplotlib",
-        "Scikit-Learn",
-        "PyTorch",
-        "TensorFlow",
-        "OpenCV",
-        "MLflow",
+    items: [
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Seaborn",
+      "Plotly",
+      "Scikit-Learn",
+      "TensorFlow",
+      ],
+    },
+    
+    {
+      title: "🧰 Tools & Libraries",
+      items: [  
+        "Power BI",
+        "Tableau",
+        "Google Colab",
+        "Jupyter Notebook",
+        "VS Code",
+        "Anaconda",
       ],
     },
     {
@@ -25,10 +36,10 @@ export default function TechStack() {
       items: [
         "HTML5",
         "CSS3",
+        "Tailwind CSS",
         "React",
         "Django",
         "Flask",
-        "FastAPI",
         "Streamlit",
       ],
     },
