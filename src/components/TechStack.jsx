@@ -54,6 +54,7 @@ export default function TechStack() {
         "GitHub",
         "Docker",
         "Heroku",
+        "Vercel",
         "AWS",
         "GitHub Actions",
       ],
