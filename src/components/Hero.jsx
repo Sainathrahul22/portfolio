@@ -54,12 +54,12 @@ export default function Hero() {
         transition={{ duration: 1 }}
         className="flex-1 flex justify-center"
       >
-        <div className="w-48 h-48 md:w-72 md:h-72 relative rounded-full overflow-hidden border-4 border-blue-400 shadow-lg">
+        <div className="w-52 h-52 md:w-80 md:h-80 relative rounded-full overflow-hidden border-4 border-blue-400 shadow-lg">
           <Image
             src="/profile.jpg"
             alt="Sainath Rahul"
             fill
-            className="object-cover object-[center_25%] scale-110"
+            className="object-cover object-[center_30%]"
             priority
           />
         </div>
