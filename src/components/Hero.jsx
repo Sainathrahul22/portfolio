@@ -4,7 +4,8 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 bg-black text-white">
+    <section className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-20 bg-black text-white gap-10">
+      
       {/* Left Section - Text */}
       <motion.div
         initial={{ opacity: 0, x: -80 }}
@@ -15,10 +16,12 @@ export default function Hero() {
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
           Hi, I’m <span className="text-blue-400">Sainath Rahul A</span>
         </h1>
+
         <p className="mt-4 text-lg md:text-xl text-gray-300">
           I’m an <span className="text-blue-400">AI/ML Developer</span> and a{" "}
           <span className="text-blue-400">Data-Centric Thinker</span>.
         </p>
+
         <p className="mt-3 text-gray-400 max-w-lg mx-auto md:mx-0">
           I specialize in developing intelligent systems that bridge data and
           innovation, turning real-world problems into smart, scalable
@@ -33,6 +36,7 @@ export default function Hero() {
           >
             View My Work
           </motion.a>
+
           <motion.a
             href="#contact"
             whileHover={{ scale: 1.05 }}
@@ -48,14 +52,15 @@ export default function Hero() {
         initial={{ opacity: 0, x: 80 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
-        className="flex-1 mt-10 md:mt-0 flex justify-center"
+        className="flex-1 flex justify-center"
       >
         <div className="w-48 h-48 md:w-72 md:h-72 relative rounded-full overflow-hidden border-4 border-blue-400 shadow-lg">
           <Image
-            src="/profile.jpg" // make sure this file exists in /public
+            src="/profile.jpg"
             alt="Sainath Rahul"
             fill
-            className="object-cover"
+            className="object-cover object-[center_25%] scale-110"
+            priority
           />
         </div>
       </motion.div>
