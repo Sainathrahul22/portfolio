@@ -15,35 +15,34 @@ export default function About() {
       >
         <h2 className="text-4xl font-bold mb-10 text-blue-400">👨‍💻 About Me</h2>
 
-        <div className="space-y-8 text-lg text-gray-200">
-          <p className="text-lg text-gray-200 leading-relaxed space-y-6">
+        <div className="space-y-6 text-lg text-gray-200">
+          <p className="leading-relaxed">
             I’m passionate about building intelligent systems and scalable web applications 
             that solve real-world problems. With a strong foundation in Data Science, 
             Machine Learning, and Full Stack Development, I focus on creating solutions 
             that are both practical and impactful.
           </p>
 
-          <p className="text-lg text-gray-200 leading-relaxed mt-6">
+          <p className="leading-relaxed">
             I have hands-on experience in data analysis, predictive modeling, and developing 
             end-to-end applications. I work with technologies like Python, Django, Flask, React, 
             and modern data tools to build efficient and user-friendly systems.
           </p>
 
-          <p className="text-lg text-gray-200 leading-relaxed mt-6">
+          <p className="leading-relaxed">
             My strengths lie in combining analytical thinking with strong development skills, enabling me 
             to design robust backends, clean user interfaces, and data-driven solutions.
           </p>
           
-          <p className="text-lg text-gray-200 leading-relaxed mt-6">
+          <p className="leading-relaxed">
             My core interests include Machine Learning, backend development, and building data-centric applications 
             that deliver meaningful insights and real value.
           </p>
 
-          <p className="text-lg text-gray-200 leading-relaxed mt-6">
+          <p className="leading-relaxed">
             I’m currently seeking opportunities in Data Science, Machine Learning, or Software Development where
-             I can contribute, learn, and grow in a dynamic environment.
+            I can contribute, learn, and grow in a dynamic environment.
           </p>
-
         </div>
       </motion.div>
     </section>
