@@ -17,31 +17,31 @@ export default function About() {
 
         <div className="space-y-8 text-lg text-gray-200">
           <p className="text-lg text-gray-200 leading-relaxed space-y-6">
-            I’m passionate about building intelligent systems and impactful web
-            applications that solve real-world problems. With a strong foundation
-            in Data Science, Machine Learning, and Python-based Full Stack Web
-            Development, I constantly strive to grow as a developer and problem
-            solver.
+            I’m passionate about building intelligent systems and scalable web applications 
+            that solve real-world problems. With a strong foundation in Data Science, 
+            Machine Learning, and Full Stack Development, I focus on creating solutions 
+            that are both practical and impactful.
           </p>
 
           <p className="text-lg text-gray-200 leading-relaxed mt-6">
-            I have hands-on experience in Python programming, having developed
-            projects involving data analysis, prediction models, and automation.
-            I also build robust and scalable web applications using frameworks
-            like Django and Flask, combining backend logic with clean and
-            responsive user interfaces.
+            I have hands-on experience in data analysis, predictive modeling, and developing 
+            end-to-end applications. I work with technologies like Python, Django, Flask, React, 
+            and modern data tools to build efficient and user-friendly systems.
           </p>
 
           <p className="text-lg text-gray-200 leading-relaxed mt-6">
-            My focus areas include Machine Learning, RESTful APIs, and cloud
-            integration. I aim to turn data into actionable insights and create
-            technology that adds tangible value.
+            My strengths lie in combining analytical thinking with strong development skills, enabling me 
+            to design robust backends, clean user interfaces, and data-driven solutions.
+          </p>
+          
+          <p className="text-lg text-gray-200 leading-relaxed mt-6">
+            My core interests include Machine Learning, backend development, and building data-centric applications 
+            that deliver meaningful insights and real value.
           </p>
 
           <p className="text-lg text-gray-200 leading-relaxed mt-6">
-            I’m currently seeking opportunities in Data Science, Machine
-            Learning, or Software Development, where I can collaborate,
-            contribute, and continue to grow in a dynamic environment. 
+            I’m currently seeking opportunities in Data Science, Machine Learning, or Software Development where
+             I can contribute, learn, and grow in a dynamic environment.
           </p>
 
         </div>
