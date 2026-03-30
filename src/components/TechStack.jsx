@@ -5,26 +5,29 @@ export default function TechStack() {
   const categories = [
     {
       title: "🚀 Programming & Scripting",
-      items: ["Python", "C", "C++", "Java", "JavaScript", "SQL"],
+      items: ["Python", "C", "Java", "JavaScript", "SQL"],
     },
     {
       title: "📊 Data Science & AI/ML",
-    items: [
-      "NumPy",
-      "Pandas",
-      "Matplotlib",
-      "Seaborn",
-      "Plotly",
-      "Scikit-Learn",
-      "TensorFlow",
+      items: [
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "Seaborn",
+        "Plotly",
+        "Hugging Face Transformers",
+        "Sentence-Transformers",
+        "Scikit-Learn",
+        "PyTorch",
       ],
     },
-    
     {
       title: "🧰 Tools & Libraries",
-      items: [  
-        "Power BI",
-        "Tableau",
+      items: [
+        "Selenium",
+        "BeautifulSoup",
+        "Requests",
+        "Framer Motion",
         "Google Colab",
         "Jupyter Notebook",
         "VS Code",
@@ -37,40 +40,34 @@ export default function TechStack() {
         "HTML5",
         "CSS3",
         "Tailwind CSS",
+        "REST API's",
         "React",
         "Django",
         "Flask",
         "Streamlit",
+        "Node.js",
       ],
     },
     {
       title: "🗄️ Databases",
-      items: ["MySQL", "PostgreSQL", "SQLite"],
+      items: ["MySQL", "PostgreSQL", "SQLite", "MongoDB"],
     },
     {
       title: "☁️ DevOps & Tools",
-      items: [
-        "Git",
-        "GitHub",
-        "Docker",
-        "Heroku",
-        "Vercel",
-        "AWS",
-        "GitHub Actions",
-      ],
+      items: ["Git", "GitHub", "Heroku", "Vercel", "GitHub Actions"],
     },
   ];
 
   return (
     <section
-      id="techstack"
+      id="tech"
       className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-black to-gray-900 text-white px-6 py-20"
     >
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-4xl text-center"
+        className="max-w-4xl w-full text-center"
       >
         <h2 className="text-4xl font-bold mb-10 text-blue-400">
           💻 Tech Stack
@@ -88,7 +85,16 @@ export default function TechStack() {
               <h3 className="text-2xl font-semibold text-blue-400 mb-4">
                 {cat.title}
               </h3>
-              <p className="text-gray-300">{cat.items.join(" • ")}</p>
+              <div className="flex flex-wrap gap-2 justify-center">
+                {cat.items.map((item, itemIndex) => (
+                  <span
+                    key={itemIndex}
+                    className="bg-gray-800/50 px-3 py-1 rounded-full text-sm text-gray-300 hover:bg-gray-700/50 transition-colors"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>
