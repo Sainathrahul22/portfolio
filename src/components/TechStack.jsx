@@ -50,7 +50,7 @@ export default function TechStack() {
     },
     {
       title: "🗄️ Databases",
-      items: ["MySQL", "PostgreSQL", "SQLite", "MongoDB"],
+      items: ["PostgreSQL", "SQLite", "MongoDB"],
     },
     {
       title: "☁️ DevOps & Tools",
